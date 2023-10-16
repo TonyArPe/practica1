@@ -41,5 +41,9 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Dejo de estar visible para el usuario. Otra App, S.O.")
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "La actividad muere.")
+    }
 
 }
