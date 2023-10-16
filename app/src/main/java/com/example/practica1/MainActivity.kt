@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "El usuario ya puede interaccionar con la pantalla")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "Pierdo el foco de la pantalla. Boton home")
+    }
+
 
 }
