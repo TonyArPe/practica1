@@ -36,5 +36,10 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Vuelvo a estar visible para santi.")
     }
 
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "Dejo de estar visible para el usuario. Otra App, S.O.")
+    }
+
 
 }
