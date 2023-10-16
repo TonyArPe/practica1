@@ -21,4 +21,10 @@ class MainActivity : AppCompatActivity() {
                 " interaccionar")
 
     }
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "El usuario ya puede interaccionar con la pantalla")
+    }
+
+
 }
