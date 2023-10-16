@@ -31,5 +31,10 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "Pierdo el foco de la pantalla. Boton home")
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "Vuelvo a estar visible para santi.")
+    }
+
 
 }
